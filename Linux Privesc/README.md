@@ -3,6 +3,9 @@
 
 - On my Kali VM, I executed **ifconfig** to identify the machine's IP address, which was **10.0.2.6**. I subsequently conducted a scan with command **nmap 10.0.2.0/25** and noted the resulting IP address, **10.0.2.15**, and its open ports, especially port 80. This IP is believed to be that of the Metasploitable VM.
 
+![alt text](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP1.1.png)
+![alt text](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP1.2.png)
+
 - I accessed the Metasploitable VM's IP **10.0.2.15** via Firefox and navigated to the Drupal directory.
 
 - Launching MSFconsole, I searched for **drupal exploits** and selected exploit number 2, based on its HTTP parameter key, which corresponds to the service running on port 80.
