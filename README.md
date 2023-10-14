@@ -3,5 +3,5 @@ Welcome to my repository of cybersecurity projects. These projects showcase my e
 
 # **Table of Contents**
 
-1. [Linux Privilege Escalation](link-to-that-project-or-section)
+1. [Linux Privilege Escalation](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/README.md)
 2. [Windows Privilege Escalation](link-to-that-project-or-section)
