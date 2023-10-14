@@ -6,8 +6,9 @@
 <p align="center">
   <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP1.1.png" alt="">
 </p>
-
-![alt text](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP1.2.png)
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP1.2.png" alt="">
+</p>
 
 - I accessed the Metasploitable VM's IP **10.0.2.15** via Firefox and navigated to the Drupal directory.
 
