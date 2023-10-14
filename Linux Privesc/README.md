@@ -1,4 +1,4 @@
-**Objective:** Exploit a Linux machine and escalate privileges to gain root access.
+#**Objective:** Exploit a Linux machine and escalate privileges to gain root access.
 
 1. On my Kali VM, I executed **ifconfig** to identify the machine's IP address, which was **10.0.2.6**. I subsequently conducted a scan with command **nmap 10.0.2.0/25** and noted the resulting IP address, **10.0.2.15**, and its open ports, especially port 80. This IP is believed to be that of the Metasploitable VM.
 2. I accessed the Metasploitable VM's IP **10.0.2.15** via Firefox and navigated to the Drupal directory.
