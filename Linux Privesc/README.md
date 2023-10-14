@@ -51,8 +51,28 @@
 
 - I set the payload options for **linux/x86/shell/reverse_tcp**, including LHOST and LPORT.
 
+
+
 - Executing the multi-handler using **run**, I transitioned to the SSH session and ran “./shells.elf”. This action opened shell session 2 in msfconsole, confirming my login as jarjar_binks via the **whoami** command.
+
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP19.1.png" alt="">
+</p>
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP19.2.png" alt="">
+</p>
 
 - I returned to the MSF console, repeated the overlayfs search, and used option 1 again. Setting the session to number 2 and running the exploit opened session 3, wherein I had root access, confirmed by the **whoami** command.
 
-- Navigating to the etc directory and executing cat on the shadow file, I finally gained access.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP20.1.png" alt="">
+</p>
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP20.2.png" alt="">
+</p>
+
+- Navigating to the etc directory and executing **cat** on the **shadow file**, I finally gained access.
+
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP21.png" alt="">
+</p>
