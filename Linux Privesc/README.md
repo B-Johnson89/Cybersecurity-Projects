@@ -12,6 +12,13 @@
 
 - I accessed the Metasploitable VM's IP **10.0.2.15** via Firefox and navigated to the Drupal directory.
 
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP2.1.png" alt="">
+</p>
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/Assets/LP2.2.png" alt="">
+</p>
+
 - Launching MSFconsole, I searched for **drupal exploits** and selected exploit number 2, based on its HTTP parameter key, which corresponds to the service running on port 80.
 
 - Upon executing the **use 2** command, I viewed the module options using **show options**. I identified that the RHOSTS (Target IP), RPORT (80), and TARGETURI (URL from Firefox) settings needed configuration.
