@@ -1,6 +1,6 @@
-Eternal Blue
+# Eternal Blue
 
-Objective:
+## Objective:
 
 - I initiated the assignment by executing the **ifconfig** command on my Kali VM, identifying the machine's IP address as 10.0.2.6.
 
