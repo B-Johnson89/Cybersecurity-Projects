@@ -8,13 +8,43 @@ Windows Privilege Escalation, leveraging tools and techniques to gain unauthoriz
 ### Part 1
 
 - I initiated a Nmap scan within a specified IP range using the command **"nmap 10.0.2.0/25"**. Given that my host IP is 10.0.2.6, I deduced that the Windows VM IP is 10.0.2.8 with multiple open ports.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp1.png" alt="">
+</p>
 - I noticed that port 8484 wasn’t displayed as open, prompting me to check using the command **"nmap -p 8484 -sV 10.0.2.8"**. I found it open and identified the running service to be **Jetty winstone-2.8**, an HTTP service.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/WP2.png" alt="">
+</p>
 - With this information, I accessed Jenkins by entering the IP address and port number **"10.0.2.8:8484"** in Firefox.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp3.png" alt="">
+</p>
 - I then switched to the terminal and entered **MSFconsole** to search for Jenkins exploits. Following the instructions, I selected **exploit number 6**.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/WP4.png" alt="">
+</p>
 - Setting options for this exploit, I configured the username and password to **vagrant**, defined the rhost as 10.0.2.8 (target IP), set the target URI based on the Firefox URL **"http://10.0.2.8:8484/"**, defined the srvhost as my host IP (10.0.2.6), and assigned the rport as 8484. Executing the **run** command opened the meterpreter session 1 as NT Authority\local service.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/WP5.1.png" alt="">
+</p>
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/WP5.2.png" alt="">
+</p>
 - I verified if the SeImpersonatePrivilege was enabled, and it was.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/WP6.png" alt="">
+</p>
 - Next, I uploaded **"JuicyPotato"** to the target machine using the meterpreter command **upload /home/kali/Downloads/JuicyPotato.exe**.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/WP7.1.png" alt="">
+</p>
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/WP7.2.png" alt="">
+</p>
 - A quick **"ls"** command confirmed its presence on the machine with **"rwx"** permissions across all user groups.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp8.png" alt="">
+</p>
 
 ### Part 2
 
