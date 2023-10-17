@@ -55,7 +55,7 @@ Windows Privilege Escalation, leveraging tools and techniques to gain unauthoriz
   <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/WP7.2.png" alt="">
 </p>
 
-- A quick **"ls"** command confirmed its presence on the machine with **rwx** permissions across all user groups.
+- A quick **ls** command confirmed its presence on the machine with **rwx** permissions across all user groups.
 
 <p align="center">
   <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp8.png" alt="">
