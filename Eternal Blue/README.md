@@ -2,6 +2,7 @@
 
 ## Objective: To gain remote access, scan, and exploit SMB vulnerabilities with Nmap and Metasploit.
 
+## Walkthrough:
 - I initiated the assignment by executing the **ifconfig** command on my Kali VM, identifying the machine's IP address as 10.0.2.6.
 
 <p align="center">
