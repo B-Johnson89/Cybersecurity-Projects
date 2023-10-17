@@ -1,6 +1,7 @@
 # Incident Response Lab
 
-## Objective: The purpose of this lab is to perform a series of cybersecurity exercises focused on Incident Response. I compromised a virtual machine (LazySysAdmin) using a Kali Linux machine and later conducted a digital forensics investigation utilizing Autopsy. This lab aims to provide hands-on experience in both exploiting vulnerabilities and investigating the corresponding indicators of compromise (IoCs).
+## Objective: 
+The purpose of this lab is to perform a series of cybersecurity exercises focused on Incident Response. I compromised a virtual machine (LazySysAdmin) using a Kali Linux machine and later conducted a digital forensics investigation utilizing Autopsy. This lab aims to provide hands-on experience in both exploiting vulnerabilities and investigating the corresponding indicators of compromise (IoCs).
 
 ### IoC 1
 - The screenshot reveals an executed command to remove the bash history (rm .bash_history). This action is often indicative of a threat actor attempting to erase their activity logs or conceal the commands executed during their session.
