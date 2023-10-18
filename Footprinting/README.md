@@ -29,7 +29,7 @@ This project serves as a practical exercise for applying advanced scanning tools
 - This screenshot elaborates on how RustScan automatically delegates detailed scanning tasks to nmap for more comprehensive results. This seamless integration optimizes the scanning process.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Footprinting/Assets/FP4.jpg" alt="">
 </p>
 
 - The fifth screenshot highlights the TCP flags associated with the open ports and services, which underscores the reliability of the connection to the target machine. Additionally, an echo of my name appears at the end, adding a personalized touch to the scan results.
