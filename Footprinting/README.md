@@ -35,5 +35,5 @@ This project serves as a practical exercise for applying advanced scanning tools
 - The fifth screenshot highlights the TCP flags associated with the open ports and services, which underscores the reliability of the connection to the target machine. Additionally, an echo of my name appears at the end, adding a personalized touch to the scan results.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Footprinting/Assets/FP5.jpg" alt="">
 </p>
