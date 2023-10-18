@@ -11,19 +11,19 @@ This project serves as a practical exercise for applying advanced scanning tools
 - This screenshot displays the outcome of an initial Nmap scan over the local network, using the command **nmap 10.0.2.0/24**. This scan helped identify the IP address of the Windows Metasploitable VM as 10.0.2.8. I was already aware of my Kali VM's IP address (10.0.2.6), making the ifconfig step unnecessary. The scan also reveals open ports and running services on the network.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Footprinting/Assets/FP1.jpg" alt="">
 </p>
 
 - The second screenshot features the results from a more comprehensive scan using **nmap -p- -A 10.0.2.8**. This scan aims to identify all open ports and gather advanced information about them, including the versions of each running service and OS detection. Numerous services and their versions are listed, ranging from FTP and SSH to various HTTP servers.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Footprinting/Assets/FP2.jpg" alt="">
 </p>
 
 - The third screenshot provides an initial glance at RustScan's output, focusing on identifying open ports on the target machine.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Footprinting/Assets/FP3.jpg" alt="">
 </p>
 
 - This screenshot elaborates on how RustScan automatically delegates detailed scanning tasks to nmap for more comprehensive results. This seamless integration optimizes the scanning process.
