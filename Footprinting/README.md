@@ -1,10 +1,9 @@
 # Footprinting
 
 ## Objective:
-For this project, the focus is on footprinting — a key phase in penetration testing—targeting a Metasploitable3 Linux machine. Utilizing Kali Linux as the operating environment, the project explores both Nmap and RustScan tools for comprehensive port scanning. The project aims to.
+For this project, the focus is on footprinting — a key phase in penetration testing — targeting a Metasploitable3 Linux machine. Utilizing Kali Linux as the operating environment, the project explores both Nmap and RustScan tools for comprehensive port scanning. The project aims to.
 1. Conduct a complete port scan of the target machine using Nmap, employing the -A switch to identify service versions on all open ports.
 2. Utilize RustScan as an alternative to Nmap for similar port scanning activities and compare its usability.
-3. Provide a detailed document encapsulating results from both Nmap and RustScan, accompanied by descriptive sentences for each screenshot to articulate the findings.
 This project serves as a practical exercise for applying advanced scanning tools in footprinting and offers an in-depth comparison of traditional and emerging tools in the domain.
 
 ## Walkthrough
