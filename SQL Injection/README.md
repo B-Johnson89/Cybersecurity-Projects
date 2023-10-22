@@ -4,9 +4,9 @@
 The objective of this lab is to gain hands-on experience in executing a manual SQL Injection attack against a vulnerable web application, specifically the JuiceShop application. Utilizing BurpSuite as an intercepting proxy, the goal is to trick the JuiceShop server into divulging sensitive information, such as stored usernames and passwords, without using the application's front-end login functionalities. This will be achieved by carefully constructing and injecting SQL queries into the application while monitoring and modifying the web traffic through BurpSuite.
 
 ## Walkthrough:
-- I initiated the process by pulling the Juice Shop image into Docker using the command **sudo docker pull bkimminich/juice-shop**.
+- I initiated the process by pulling the Juice Shop image into Docker using the command **(sudo docker pull bkimminich/juice-shop)**.
 
-- To run the Juice Shop container, I executed **sudo docker run --rm -p 3000:3000 bkimminich/juice-shop**. This command sets up the Juice Shop to run on port 3000 of my local machine, making it accessible via a web browser at the URL **"localhost:3000"**.
+- To run the Juice Shop container, I executed **(sudo docker run --rm -p 3000:3000 bkimminich/juice-shop)**. This command sets up the Juice Shop to run on port 3000 of my local machine, making it accessible via a web browser at the URL **"localhost:3000"**.
 
 - Next, I launched **BurpSuite** using the terminal with the simple command burpsuite.
 
@@ -18,7 +18,7 @@ The objective of this lab is to gain hands-on experience in executing a manual S
 
 - Upon examining the **"Request"** and **"Response"** logs for the failed POST, I observed an SQL query within the **"Response"** log. This suggested the possibility of executing an SQL injection attack.
 
-- Switching over to the **"Intercept"** and **"Raw"** tabs, I inserted my chosen SQL injection payload, **' OR '1'='1' --**.
+- Switching over to the **"Intercept"** and **"Raw"** tabs, I inserted my chosen SQL injection payload, **(' OR '1'='1' --)**.
 
 - After forwarding this payload, I checked the **"HTTP history"** tab again and discovered a new **"POST"** login request, now with a successful **200 status code**.
 
