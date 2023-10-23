@@ -19,7 +19,7 @@ The objective of this lab is to gain hands-on experience in executing a manual S
 - Next, I launched **BurpSuite** using the terminal with the simple command burpsuite.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/SQL%20Injection/Assets/SQL3.jpg" alt="">
 </p>
 
 - Inside BurpSuite, I accessed the Proxy Tab and used its integrated browser to navigate to **"localhost:3000"**, thereby opening Juice Shop.
