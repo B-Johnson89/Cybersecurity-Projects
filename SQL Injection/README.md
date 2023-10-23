@@ -67,5 +67,5 @@ The objective of this lab is to gain hands-on experience in executing a manual S
 - Returning to the Juice Shop in my web browser, I was greeted with a message informing me that I had successfully completed the challenge of logging in as an admin.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/SQL%20Injection/Assets/SQL11.jpg" alt="">
 </p>
