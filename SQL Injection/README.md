@@ -37,7 +37,7 @@ The objective of this lab is to gain hands-on experience in executing a manual S
 - I returned to the **"HTTP history"** tab in BurpSuite and located the URL corresponding to my failed login attempt, which displayed a status code of 500.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/SQL%20Injection/Assets/SQL6.jpg" alt="">
 </p>
 
 - Upon examining the **"Request"** and **"Response"** logs for the failed POST, I observed an SQL query within the **"Response"** log. This suggested the possibility of executing an SQL injection attack.
