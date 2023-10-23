@@ -25,7 +25,7 @@ The objective of this lab is to gain hands-on experience in executing a manual S
 - Inside BurpSuite, I accessed the Proxy Tab and used its integrated browser to navigate to **"localhost:3000"**, thereby opening Juice Shop.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/SQL%20Injection/Assets/SQL4.jpg" alt="">
 </p>
 
 - I then proceeded to the login page, where I input an email as a single quote **(')** and set the password to **"123"**. This resulted in an invalid response labeled **[object Object]**.
