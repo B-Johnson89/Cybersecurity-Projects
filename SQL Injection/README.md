@@ -31,7 +31,7 @@ The objective of this lab is to gain hands-on experience in executing a manual S
 - I then proceeded to the login page, where I input an email as a single quote **(')** and set the password to **"123"**. This resulted in an invalid response labeled **[object Object]**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/SQL%20Injection/Assets/SQL5.jpg" alt="">
 </p>
 
 - I returned to the **"HTTP history"** tab in BurpSuite and located the URL corresponding to my failed login attempt, which displayed a status code of 500.
