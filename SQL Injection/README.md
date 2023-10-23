@@ -7,7 +7,7 @@ The objective of this lab is to gain hands-on experience in executing a manual S
 - I initiated the process by pulling the Juice Shop image into Docker using the command **(sudo docker pull bkimminich/juice-shop)**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/SQL%20Injection/Assets/SQL1.jpg" alt="">
 </p>
 
 - To run the Juice Shop container, I executed **(sudo docker run --rm -p 3000:3000 bkimminich/juice-shop)**. This command sets up the Juice Shop to run on port 3000 of my local machine, making it accessible via a web browser at the URL **"localhost:3000"**.
