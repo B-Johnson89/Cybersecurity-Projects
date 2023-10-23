@@ -55,7 +55,7 @@ The objective of this lab is to gain hands-on experience in executing a manual S
 - After forwarding this payload, I checked the **"HTTP history"** tab again and discovered a new **"POST"** login request, now with a successful **200 status code**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/SQL%20Injection/Assets/SQL9.jpg" alt="">
 </p>
 
 - The raw response indicated that I had successfully logged in as an admin with the email address **"admin@juice-sh.op"**.
