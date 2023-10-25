@@ -30,6 +30,6 @@ This project focuses on mobile penetration testing, specifically targeting Andro
 
 **DIVA App Installation Prep:** Next, I navigated to the directory where the DIVA APK file was located to prepare for its installation.
 
-**Installing DIVA App:** To install the APK file, I ran the command adb install DivaApplication.apk and received a "Success" message as output.
+- **Installing DIVA App:** To install the APK file, I ran the command adb install DivaApplication.apk and received a "Success" message as output.
 
-**Verifying Installation:** To confirm that the DIVA App was installed successfully, I executed adb shell pm list packages. The package "jakhar.aseem.diva" was listed, indicating successful installation.
+- **Verifying Installation:** To confirm that the DIVA App was installed successfully, I executed adb shell pm list packages. The package "jakhar.aseem.diva" was listed, indicating successful installation.
