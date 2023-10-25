@@ -14,9 +14,9 @@ This project focuses on mobile penetration testing, specifically targeting Andro
 
 - **Enabling USB Debugging:** The assignment began with enabling USB debugging on the Android virtual machine (VM). I navigated to the "Developer Options" in the settings and activated "USB Debugging."
 
-**Network Scanning with Nmap:** Before connecting to the Android VM from my Kali machine, I conducted a network scan using nmap. The command nmap 10.0.2.0/24 revealed the IP addresses of both my Kali VM (10.0.2.6) and the Android VM (10.0.2.9). The Android VM had an open port of 5555 with "freeciv" running on it.
+- **Network Scanning with Nmap:** Before connecting to the Android VM from my Kali machine, I conducted a network scan using nmap. The command nmap 10.0.2.0/24 revealed the IP addresses of both my Kali VM (10.0.2.6) and the Android VM (10.0.2.9). The Android VM had an open port of 5555 with "freeciv" running on it.
 
-**ADB Connection:** I then established a connection to the Android VM using the command adb connect 10.0.2.9.
+- **ADB Connection:** I then established a connection to the Android VM using the command adb connect 10.0.2.9.
 
 **Shell Environment:** Following the successful connection, I initiated a shell environment with the command adb shell.
 
