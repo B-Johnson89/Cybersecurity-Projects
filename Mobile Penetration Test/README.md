@@ -26,9 +26,9 @@ This project focuses on mobile penetration testing, specifically targeting Andro
 
 **Determining Brand Name:** To identify the brand of the Android VM, I executed the command getprop ro.product.brand. The output was "Android-x86."
 
-**Listing Installed Packages:** I listed all installed packages on the device using the command pm list packages -f. The screenshot included in my submission captures a portion of the list.
+- **Listing Installed Packages:** I listed all installed packages on the device using the command pm list packages -f. The screenshot included in my submission captures a portion of the list.
 
-**DIVA App Installation Prep:** Next, I navigated to the directory where the DIVA APK file was located to prepare for its installation.
+- **DIVA App Installation Prep:** Next, I navigated to the directory where the DIVA APK file was located to prepare for its installation.
 
 - **Installing DIVA App:** To install the APK file, I ran the command adb install DivaApplication.apk and received a "Success" message as output.
 
