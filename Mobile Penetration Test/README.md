@@ -22,9 +22,9 @@ This project focuses on mobile penetration testing, specifically targeting Andro
 
 **Collecting Device Name:** To determine the device name, I entered the command getprop ro.product.device, which returned the value "x86_64."
 
-**Identifying Device Model:** I used the command getprop ro.product.model to find out the device model, which was identified as "VirtualBox."
+- **Identifying Device Model:** I used the command getprop ro.product.model to find out the device model, which was identified as "VirtualBox."
 
-**Determining Brand Name:** To identify the brand of the Android VM, I executed the command getprop ro.product.brand. The output was "Android-x86."
+- **Determining Brand Name:** To identify the brand of the Android VM, I executed the command getprop ro.product.brand. The output was "Android-x86."
 
 - **Listing Installed Packages:** I listed all installed packages on the device using the command pm list packages -f. The screenshot included in my submission captures a portion of the list.
 
