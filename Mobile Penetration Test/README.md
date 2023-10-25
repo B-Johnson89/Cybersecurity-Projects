@@ -11,3 +11,25 @@ This project focuses on mobile penetration testing, specifically targeting Andro
 5. **Documentation and Reporting:** Compiling all steps, methodologies, and findings into a single document, complete with screenshots and explanations, to offer a full view of the penetration testing process and outcomes.
 
 ## Walkthrough:
+
+**Enabling USB Debugging:** The assignment began with enabling USB debugging on the Android virtual machine (VM). I navigated to the "Developer Options" in the settings and activated "USB Debugging."
+
+**Network Scanning with Nmap:** Before connecting to the Android VM from my Kali machine, I conducted a network scan using nmap. The command nmap 10.0.2.0/24 revealed the IP addresses of both my Kali VM (10.0.2.6) and the Android VM (10.0.2.9). The Android VM had an open port of 5555 with "freeciv" running on it.
+
+**ADB Connection:** I then established a connection to the Android VM using the command adb connect 10.0.2.9.
+
+**Shell Environment:** Following the successful connection, I initiated a shell environment with the command adb shell.
+
+**Collecting Device Name:** To determine the device name, I entered the command getprop ro.product.device, which returned the value "x86_64."
+
+**Identifying Device Model:** I used the command getprop ro.product.model to find out the device model, which was identified as "VirtualBox."
+
+**Determining Brand Name:** To identify the brand of the Android VM, I executed the command getprop ro.product.brand. The output was "Android-x86."
+
+**Listing Installed Packages:** I listed all installed packages on the device using the command pm list packages -f. The screenshot included in my submission captures a portion of the list.
+
+**DIVA App Installation Prep:** Next, I navigated to the directory where the DIVA APK file was located to prepare for its installation.
+
+**Installing DIVA App:** To install the APK file, I ran the command adb install DivaApplication.apk and received a "Success" message as output.
+
+**Verifying Installation:** To confirm that the DIVA App was installed successfully, I executed adb shell pm list packages. The package "jakhar.aseem.diva" was listed, indicating successful installation.
