@@ -26,19 +26,19 @@ This project focuses on mobile penetration testing, specifically targeting Andro
 </p>
 - **Shell Environment:** Following the successful connection, I initiated a shell environment with the command adb shell.
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Mobile%20Penetration%20Test/Assets/mpt4.jpg" alt="">
 </p>
 - **Collecting Device Name:** To determine the device name, I entered the command getprop ro.product.device, which returned the value "x86_64."
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Mobile%20Penetration%20Test/Assets/mpt5.jpg" alt="">
 </p>
 - **Identifying Device Model:** I used the command getprop ro.product.model to find out the device model, which was identified as "VirtualBox."
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Mobile%20Penetration%20Test/Assets/mpt6.jpg" alt="">
 </p>
 - **Determining Brand Name:** To identify the brand of the Android VM, I executed the command getprop ro.product.brand. The output was "Android-x86."
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Mobile%20Penetration%20Test/Assets/mpt7.jpg" alt="">
 </p>
 - **Listing Installed Packages:** I listed all installed packages on the device using the command pm list packages -f. The screenshot included in my submission captures a portion of the list.
 <p align="center">
