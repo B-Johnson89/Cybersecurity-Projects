@@ -18,9 +18,9 @@ This project focuses on mobile penetration testing, specifically targeting Andro
 
 - **ADB Connection:** I then established a connection to the Android VM using the command adb connect 10.0.2.9.
 
-**Shell Environment:** Following the successful connection, I initiated a shell environment with the command adb shell.
+- **Shell Environment:** Following the successful connection, I initiated a shell environment with the command adb shell.
 
-**Collecting Device Name:** To determine the device name, I entered the command getprop ro.product.device, which returned the value "x86_64."
+- **Collecting Device Name:** To determine the device name, I entered the command getprop ro.product.device, which returned the value "x86_64."
 
 - **Identifying Device Model:** I used the command getprop ro.product.model to find out the device model, which was identified as "VirtualBox."
 
