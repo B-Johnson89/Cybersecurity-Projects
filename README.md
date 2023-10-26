@@ -9,4 +9,5 @@ Welcome to my repository of cybersecurity projects. These projects showcase my e
 4. [Linux Privilege Escalation](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Linux%20Privesc/README.md)
 5. [Mobile Penetration Test](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Mobile%20Penetration%20Test/README.md)
 6. [SQL Injection](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/SQL%20Injection/README.md)
-7. [Windows Privilege Escalation](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/README.md)
+7. [Windows Buffer Overflow](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/README.md)
+8. [Windows Privilege Escalation](https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Privesc/README.md)
