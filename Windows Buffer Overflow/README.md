@@ -41,7 +41,7 @@ This project is centered on understanding and executing a Windows buffer overflo
 - On my Kali machine, downloaded the fuzzer script labeled “fuzzerScript.py” and stored it in a “BOF” folder on my desktop.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF5.png" alt="">
 </p>
 
 
