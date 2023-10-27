@@ -69,7 +69,7 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Navigated to the BOF directory and executed the “fuzzy.py” script using the “python2 fuzzy.py” command.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF9.png" alt="">
 </p>
 
 
