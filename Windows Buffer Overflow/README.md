@@ -25,16 +25,18 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Opened both “SLmail.cpl” & “Immunity debugger” with administrative rights.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF3.png" alt="">
 </p>
 
 
 - In “Immunity debugger”, attached the “SLmail.exe” file and ensured it's actively running.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF4-1.png" alt="">
 </p>
-
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF4-2.png" alt="">
+</p>
 
 - On my Kali machine, downloaded the fuzzer script labeled “fuzzerScript.py” and stored it in a “BOF” folder on my desktop.
 
