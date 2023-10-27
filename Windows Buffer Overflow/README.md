@@ -11,14 +11,14 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Initialized the BOF machine, accessed the command prompt as an administrator, and ran “slmgr /rearm” and “ipconfig” to determine the machine's IP address as “10.0.2.10”.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF1.png" alt="">
 </p>
 
 
 - Installed “12f1ab027e5374587e7e998c00682c5d-SLMail55_4433.exe” on the Windows VM, rebooted it, and created a desktop shortcut for “SLmail.cpl”.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF2.png" alt="">
 </p>
 
 
