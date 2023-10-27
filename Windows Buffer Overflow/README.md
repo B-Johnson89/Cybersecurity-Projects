@@ -111,21 +111,21 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Validated the offset by adjusting the buffer in “fuzzy.py” and observing the Immunity debugger's EIP value.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF14.png" alt="">
 </p>
 
 
 - Incorporated a list of potential bad characters into the “fuzzy.py” buffer to refine the exploit.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF15.png" alt="">
 </p>
 
 
 - Re-executed the adjusted “fuzzy.py” script and followed the ESP in dump within Immunity debugger to identify and remove any bad characters.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF16.png" alt="">
 </p>
 
 
