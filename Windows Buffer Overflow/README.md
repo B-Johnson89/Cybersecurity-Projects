@@ -76,14 +76,14 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Observed the EIP update to “41414141” in Immunity debugger.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF10.png" alt="">
 </p>
 
 
 - Generated an MSF pattern of 3000 bytes using the “msf-pattern_create -l 3000” command to pinpoint control flow locations.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF11.png" alt="">
 </p>
 
 
