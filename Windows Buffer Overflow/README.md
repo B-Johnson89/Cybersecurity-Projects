@@ -48,21 +48,21 @@ This project is centered on understanding and executing a Windows buffer overflo
 - In the same folder, created and edited a file named “fuzzy.py”. Line 13 requires the target IP address and port number.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF6.png" alt="">
 </p>
 
 
 - Conducted an nmap scan on the target VM to confirm open ports and noted the active “pop3” protocol.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF7.png" alt="">
 </p>
 
 
 - Updated “fuzzy.py” with the target IP address and port, then saved changes.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF8.png" alt="">
 </p>
 
 
