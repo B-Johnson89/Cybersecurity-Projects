@@ -90,21 +90,21 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Updated the “fuzzy.py” script's buffer with the generated MSF pattern and removed unnecessary loops.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF12.png" alt="">
 </p>
 
 
 - Reset SLmail.cpl and the Immunity debugger, re-executed the “fuzzy.py” script, and noted the updated EIP value in Immunity debugger.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF13.png" alt="">
 </p>
 
 
 - Determined the exact memory offset using the “msf-pattern_offset -l 3000 -q 39694438” command.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF13.png" alt="">
 </p>
 
 
