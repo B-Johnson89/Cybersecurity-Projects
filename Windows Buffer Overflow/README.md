@@ -68,37 +68,37 @@ This project is centered on understanding and executing a Windows buffer overflo
 - In Immunity debugger, noticed EIP showing **“41414141”**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF10.png" alt="">
 </p>
 
 - Generated an MSF pattern using **“msf-pattern_create -l 3000”**, producing a unique 3000-byte pattern to identify program control flow.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF11.png" alt="">
 </p>
 
 - Copied this pattern into the **“fuzzy.py”** script buffer, removing the unnecessary counter and loop.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF12.png" alt="">
 </p>
 
 - Reset both SLmail.cpl and Immunity debugger. Ensured SLmail was active in Immunity, then ran **“python2 fuzzy.py”** from Kali.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF13.png" alt="">
 </p>
 
 - Observed EIP in Immunity debugger updated to **“39694438”**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF14.png" alt="">
 </p>
 
 - Determined memory control location using **“msf-pattern_offset -l 3000 -q 39694438”**, identifying offset **“2606”**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF15.png" alt="">
 </p>
 
 - Validated this by modifying **“fuzzy.py”** buffer to **“A * 2606 + B * 4”**.
