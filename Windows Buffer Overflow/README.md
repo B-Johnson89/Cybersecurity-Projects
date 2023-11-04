@@ -176,7 +176,7 @@ This project is centered on understanding and executing a Windows buffer overflo
   <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF26.png" alt="">
 </p>
 
-- Restarted SLmail, ran **“fuzzy.py”**. The netcat listener received the code, granting system access. Confirmed with **“whoami”** command showing “nt authority\system”.
+- Restarted SLmail, ran **“fuzzy.py”**. The netcat listener received the code, granting system access. Confirmed with **“whoami”** command showing **“nt authority\system”**.
 
 <p align="center">
   <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF27.png" alt="">
