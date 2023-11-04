@@ -104,13 +104,16 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Validated this by modifying **“fuzzy.py”** buffer to **“A * 2606 + B * 4”**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF16.png" alt="">
 </p>
 
 - Reset SLmail.cpl and Immunity debugger, then executed **“python2 fuzzy.py”**. Noticed EIP as **“42424242”** and EBP as **“41414141”** in Immunity debugger.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF17-1.png" alt="">
+</p>
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF17-2.png" alt="">
 </p>
 
 - Updated **“fuzzy.py”** to include bad characters, and modified the buffer accordingly.
