@@ -11,55 +11,58 @@ This project is centered on understanding and executing a Windows buffer overflo
 - Opened BOF machine, accessed command prompt as admin, ran **“slmgr /rearm”** and **“ipconfig”**. Identified IP as **“10.0.2.10”**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF1.png" alt="">
 </p>
 
 - Installed **“12f1ab027e5374587e7e998c00682c5d-SLMail55_4433.exe”**, rebooted VM, and created a shortcut for **“SLmail.cpl”**.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF2.png" alt="">
 </p>
 
 - Launched **“SLmail.cpl”** & **“Immunity debugger”** as admin.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF3.png" alt="">
 </p>
 
 - In “Immunity debugger”, attached the **“SLmail.exe”** file and ensure its active state.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF4-1.png" alt="">
+</p>
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF4-2.png" alt="">
 </p>
 
 - On my Kali machine, downloaded the **“fuzzerScript.py”** to the BOF folder on the desktop.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF5.png" alt="">
 </p>
 
 - In the same directory, created and edited **“fuzzy.py”**, updating the target IP address on line 13.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF6.png" alt="">
 </p>
 
 - Performed an nmap scan on the target VM. Identified Port 100 open with “pop3” protocol.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF7.png" alt="">
 </p>
 
 - Updated the **“fuzzy.py”** with the target IP and port.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF8.png" alt="">
 </p>
 
 - In the BOF directory, executed the script using “python2 fuzzy.py”.
 
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Windows%20Buffer%20Overflow/Assets/BOF9.png" alt="">
 </p>
 
 - In Immunity debugger, noticed EIP showing **“41414141”**.
