@@ -7,3 +7,5 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
 2. **Web Services Scanning:** Conducting scans on web services, specifically focusing on identifying and analyzing results on port 8585.
 3. **Specialized Scanner Usage:** Researching and employing specialized scanners based on the initial scan results, with a focus on in-depth enumeration.
 4. **Problem-Solving:** Addressing common issues encountered during scanning, such as non-responsive ports and dependency errors in tools.
+
+## Walkthrough:
