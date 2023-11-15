@@ -46,7 +46,7 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
       - WordPress login page at /wordpress/wp-login.php.
       - Browsable WordPress uploads directory at /wordpress/wp-content/uploads/, risking information leakage.
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Specialized%20Scanners/Assets/SS4.jpg" alt="">
 </p>
 
 ### **Specialized Scanner (WPScan)**
