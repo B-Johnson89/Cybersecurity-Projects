@@ -67,7 +67,7 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
 
 4. This screenshot displays the contents of the upload directory, specifically the wordpress/wp-content/uploads/2016/09 folder, revealing images including the Metasploitable3 flag.
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Specialized%20Scanners/Assets/SS5.4.jpg" alt="">
 </p>
 
 5. The final screenshot is of the Metasploitable3 flag, depicting an image of a man in a hat alongside The RZA, the founder of the Wu-Tang music collective, wearing a red hat on a King of Hearts playing card.
