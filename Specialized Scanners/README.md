@@ -18,7 +18,7 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
 ### **Dirbuster**
 1. The following step involved running a Dirbuster scan. This screenshot displays the setup, with the target URL set as http://10.0.2.8:8585. The brute-force list, sourced from Dirbuster’s directory (/usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt), was used.
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Specialized%20Scanners/Assets/SS2.jpg" alt="">
 </p>
 
 2. The subsequent screenshot presents the outcomes of the Dirbuster scan. It reveals several directories and files, including those related to a WordPress installation.
@@ -33,7 +33,7 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
       - WordPress Themes: /wordpress/wp-content/themes/
       - WordPress Plugins: /wordpress/wp-content/plugins/
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Specialized%20Scanners/Assets/SS3.jpg" alt="">
 </p>
 
 ### **Nikto**
