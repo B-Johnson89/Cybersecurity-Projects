@@ -57,7 +57,7 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
 
 2. I verified the installation of WPScan using the command wpscan –version.
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Specialized%20Scanners/Assets/SS5.2.jpg" alt="">
 </p>
 
 3. A subsequent screenshot shows a WPScan of the target VM’s open port 8585, focusing on the WordPress directory. The scan confidently identified that the Upload Directory at http://10.0.2.8:8585/wordpress/wp-content/uploads/ has listing enabled.
