@@ -72,5 +72,5 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
 
 5. The final screenshot is of the Metasploitable3 flag, depicting an image of a man in a hat alongside The RZA, the founder of the Wu-Tang music collective, wearing a red hat on a King of Hearts playing card.
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Specialized%20Scanners/Assets/SS5.5.jpg" alt="">
 </p>
