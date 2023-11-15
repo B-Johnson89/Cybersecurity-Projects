@@ -51,7 +51,26 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
 
 ### **Specialized Scanner (WPScan)**
 1. This screenshot illustrates my Google search for a specialized scanner suitable for enumerating port 8585, leading to the selection of the WordPress scanner.
+<p align="center">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Specialized%20Scanners/Assets/SS5.1.jpg" alt="">
+</p>
+
 2. I verified the installation of WPScan using the command wpscan –version.
+<p align="center">
+  <img src="" alt="">
+</p>
+
 3. A subsequent screenshot shows a WPScan of the target VM’s open port 8585, focusing on the WordPress directory. The scan confidently identified that the Upload Directory at http://10.0.2.8:8585/wordpress/wp-content/uploads/ has listing enabled.
+<p align="center">
+  <img src="" alt="">
+</p>
+
 4. This screenshot displays the contents of the upload directory, specifically the wordpress/wp-content/uploads/2016/09 folder, revealing images including the Metasploitable3 flag.
+<p align="center">
+  <img src="" alt="">
+</p>
+
 5. The final screenshot is of the Metasploitable3 flag, depicting an image of a man in a hat alongside The RZA, the founder of the Wu-Tang music collective, wearing a red hat on a King of Hearts playing card.
+<p align="center">
+  <img src="" alt="">
+</p>
