@@ -1,4 +1,4 @@
-# Specialized Scanners Lab
+# Specialized Scanners CTF
 
 ## Objective:
 Objective: The purpose of this lab is to provide hands-on experience in using specialized scanning tools within a controlled environment. I engaged in scanning and enumerating web services on a Windows platform, using a combination of Nmap, Dirbuster, Nikto, and other specialized tools. The lab is designed to simulate real-world scenarios where understanding and maneuvering around various cybersecurity challenges is crucial. Key tasks include:
