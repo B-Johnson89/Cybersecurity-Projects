@@ -12,13 +12,15 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
 ### **NMAP**
 1. This screenshot demonstrates the initial step of scanning all ports on the target machine using the command nmap -p- 10.0.2.8. The output shows all open ports, including port 8585, which is highlighted.
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/B-Johnson89/Cybersecurity-Projects/blob/main/Specialized%20Scanners/Assets/SS1.jpg" alt="">
 </p>
+
 ### **Dirbuster**
 1. The following step involved running a Dirbuster scan. This screenshot displays the setup, with the target URL set as http://10.0.2.8:8585. The brute-force list, sourced from Dirbuster’s directory (/usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt), was used.
 <p align="center">
   <img src="" alt="">
 </p>
+
 2. The subsequent screenshot presents the outcomes of the Dirbuster scan. It reveals several directories and files, including those related to a WordPress installation.
   - **Key Findings:**
     - Root Directories and Files:
@@ -30,6 +32,10 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
       - WordPress Content: /wordpress/wp-content/
       - WordPress Themes: /wordpress/wp-content/themes/
       - WordPress Plugins: /wordpress/wp-content/plugins/
+<p align="center">
+  <img src="" alt="">
+</p>
+
 ### **Nikto**
 1. This screenshot captures the Nikto scan and its findings on the target machine, executed with the command nikto -h http://10.0.2.8:8585. The -h argument specifies the target host.
   - **Key Findings:**
@@ -39,6 +45,10 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
       - WordPress version disclosed through readme.html and wp-links-opml.php files.
       - WordPress login page at /wordpress/wp-login.php.
       - Browsable WordPress uploads directory at /wordpress/wp-content/uploads/, risking information leakage.
+<p align="center">
+  <img src="" alt="">
+</p>
+
 ### **Specialized Scanner (WPScan)**
 1. This screenshot illustrates my Google search for a specialized scanner suitable for enumerating port 8585, leading to the selection of the WordPress scanner.
 2. I verified the installation of WPScan using the command wpscan –version.
