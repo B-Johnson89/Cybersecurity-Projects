@@ -11,8 +11,14 @@ Objective: The purpose of this lab is to provide hands-on experience in using sp
 ## Walkthrough:
 ### **NMAP**
 1. This screenshot demonstrates the initial step of scanning all ports on the target machine using the command nmap -p- 10.0.2.8. The output shows all open ports, including port 8585, which is highlighted.
+<p align="center">
+  <img src="" alt="">
+</p>
 ### **Dirbuster**
 1. The following step involved running a Dirbuster scan. This screenshot displays the setup, with the target URL set as http://10.0.2.8:8585. The brute-force list, sourced from Dirbuster’s directory (/usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt), was used.
+<p align="center">
+  <img src="" alt="">
+</p>
 2. The subsequent screenshot presents the outcomes of the Dirbuster scan. It reveals several directories and files, including those related to a WordPress installation.
   - **Key Findings:**
     - Root Directories and Files:
