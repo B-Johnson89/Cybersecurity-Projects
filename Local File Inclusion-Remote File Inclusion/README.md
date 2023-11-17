@@ -24,3 +24,6 @@ The purpose of this project is to gain practical experience in identifying and e
 4. Issue Resolution:
 - Address common issues encountered during exploitation, including enabling the PHP function allow_url_include.
 - Provide troubleshooting steps for resolving errors and challenges in the scanning environment.
+
+## Walkthrough
+### Local File Inclusion (LFI)
